@@ -1,6 +1,11 @@
 # Copy over Omarchy configs
 cp -R ~/.local/share/omarchy/config/* ~/.config/
 
+# Backup existing bashrc if there is one
+if [[ -f "~/.bashrc" ]] then
+  cp ~/.bashrc ~/.bashrc.bak
+fi
+
 # Use default bashrc from Omarchy
 echo "source ~/.local/share/omarchy/default/bash/rc" >~/.bashrc
 

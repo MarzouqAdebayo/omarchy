@@ -24,3 +24,16 @@ if ! fc-list | grep -qi "iA Writer Mono S"; then
   fc-cache
   cd -
 fi
+
+# if ! fc-list | grep -qi "Lilex Nerd Font"; then
+#   cd /tmp
+#   wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/CascadiaMono.zip
+#   unzip CascadiaMono.zip -d CascadiaFont
+#   cp CascadiaFont/CaskaydiaMonoNerdFont-Regular.ttf ~/.local/share/fonts
+#   cp CascadiaFont/CaskaydiaMonoNerdFont-Bold.ttf ~/.local/share/fonts
+#   cp CascadiaFont/CaskaydiaMonoNerdFont-Italic.ttf ~/.local/share/fonts
+#   cp CascadiaFont/CaskaydiaMonoNerdFont-BoldItalic.ttf ~/.local/share/fonts
+#   rm -rf CascadiaMono.zip CascadiaFont
+#   fc-cache
+#   cd -
+# fi
